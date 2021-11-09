@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% for task in all_tasks %}
+
+    <p>
+        Task ID: {{ task.id }}<br>
+        Description: {{ task.desc }}<br>
+        Complete: {{ task.completed }}<br>
+    </p>
+
+{% endfor %}
+
+{% endblock body %}
